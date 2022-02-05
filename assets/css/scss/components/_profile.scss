@@ -1,0 +1,63 @@
+  .social {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px 0 40px;
+    
+    .profile {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .avatar {
+        aspect-ratio: 1 / 1;
+        border-radius: 50%;
+        height: 84px;
+        object-fit: cover;
+        margin-right: 22px;  
+      }
+      .title {
+        font-weight: bold;
+        font-size: 30px;
+        line-height: 30px;
+      }
+    
+      .subTitle {
+        font-size: 18px;
+        color: lightgray;
+      }
+    }
+
+    .button {
+      border: none;
+      padding: 6px 12px;
+      color: white;
+      margin-left: 8px;
+    }
+
+    .light-blue {
+      background-color: lightblue;
+    }
+
+    .light-coral {
+      background-color: lightcoral;
+    }
+  }
+
+  @media screen and (min-width: 365px) {
+    .social {
+      border-bottom: 1px solid #f1f1f1;
+
+      .profile {
+        .avatar {
+          height: 60px;
+        }
+        .title {
+          font-size: 20px;
+        }
+      
+        .subTitle {
+          font-size: 14px;
+        }
+      }
+    }
+  }
